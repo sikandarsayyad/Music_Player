@@ -1,0 +1,173 @@
+ @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300&display=swap');
+
+ @keyframes rotatePlayer {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    background-image: url("./components/images/background.avif");
+    background-size: cover;
+ }
+
+ .main_div{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+ }
+
+ .music_container{
+    background-color: #fff;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    width: 18rem;
+    height: 30rem;
+    padding: 2rem;
+ }
+ .music_container #title {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
+    color: #171717;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.music_container #artist {
+    color: #cccacc;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    font-weight: 800;
+}
+ .music_container img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+}
+.music_controls {
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 1rem;
+
+}
+
+.music_controls .fa-solid {
+    color: #111111;
+    font-size: 1.5rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.4));
+}
+
+.music_controls .main_button {
+    width: 4rem;
+    height: 4rem;
+    background-color: #111;
+    border-radius: 50%;
+    color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music_controls .fa-solid:hover {
+    color: gray;
+}
+
+.music_controls .main_button:hover {
+    background-color: #f6f6f6;
+    color: #111;
+    box-shadow: 0 0 3rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+
+.progress_container {
+    width: 5rem;
+    height: auto;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+.progress_div {
+    width: 100%;
+    position: relative;
+    height: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    appearance: none;
+    transition: width 1s linear;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+
+}
+
+.progress {
+    top: 0;
+    left: 0;
+    width: 0%;
+    background-color: rgb(69, 69, 234);
+    height: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    appearance: none;
+    /* transition: width 1s linear; */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+.progress_duration_meter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: #111;
+    font-weight: 900;
+}
+
+
+/* add anime class to animate */
+
+.anime {
+    animation: rotatePlayer 4.5s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link  rel="stylesheet" type="text/css" href="controlsStyle.css"></link>
+    <link  rel="stylesheet" type="text/css" href="speackerStyle.css"></link>
+	<title>Music Player</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="main_div">
+        <div id="speaker1">
+            <div class="speaker_container">
+                <div class="woofer">
+                    <div id="sound1"></div>
+                    <div id="cone1"></div>
+                    <div class="cap"></div>
+                </div>
+                <div class="woofer">
+                    <div id="sound2"></div>
+                    <div id="cone2"></div>
+                    <div class="cap"></div>
+                </div>
+                <div class="strip"></div>
+            </div>
+        </div>
+        <div class="music_container">
+            <h2 id="title">Mere sapano ki rani</h2>
+            <h3 id="artist">Kishor kumar</h3>
+            <div class="img_container">
+                <img src="./components/images/1kishorkumar.jpg" alt="">
+            </div>
+            <audio preload="auto" src="./components/music/1kishorkumar.mp3"></audio>
+
+            <!-- progress bar -->
+            <div class="progressbar_container" id="progress_container">
+                <div class="progress_duration_meter">
+                    <div id="current_time">0:00</div>
+                    <div id="duration">5:01</div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+
+            </div>
+            <div class="music_controls">
+                <i class="fa-solid fa-backward" id="prev" title="Previous"></i>
+                <i class="fa-solid fa-play main_button" id="play" title="Play"></i>
+                <i class="fa-solid fa-forward" id="next" title="Next"></i>
+            </div>
+        </div>
+        <div id="speaker2">
+            <div class="speaker_container">
+                <div class="woofer">
+                    <div id="sound3"></div>
+                    <div id="cone3"></div>
+                    <div class="cap"></div>
+                </div>
+                <div class="woofer">
+                    <div id="sound4"></div>
+                    <div id="cone4"></div>
+                    <div class="cap"></div>
+                </div>
+                <div class="strip"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
